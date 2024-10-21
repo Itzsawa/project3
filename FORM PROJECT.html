@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        * {box-sizing: border-box;}
+        
+        input[type=text], select, textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid rgb(206, 203, 203);
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+        }
+        
+        input[type=submit] {
+          background-color: rgb(4, 170, 109);
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        input:hover {
+          background-color: rgb(254, 254, 254);
+        }
+        
+        .container {
+          border-radius: 5px;
+          background-color: rgb(242, 242, 242);
+          padding: 20px;
+        }
+        </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Application Form</h1>
+    <div class="container">
+        <form>
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder=" Your email..">
+
+          <label for="pword">Password</label>
+          <input type="text" id="pword" name="password" placeholder="Your password..">
+
+          <label for="courses">Courses</label> <br>
+          <form>
+            <input type="checkbox" id="course1" name="course1" value="Math">
+            <label for="course1">Math</label><br>
+            <input type="checkbox" id="course2" name="course2" value="English">
+            <label for="course2">English</label><br>
+            <input type="checkbox" id="course3" name="course3" value="Biology">
+            <label for="course3">Biology</label><br><br>
+          </form>
+
+          <label for="gender">Gender:</label> 
+          <form>
+             <input type="radio" id="male" name="gender" value="Male">
+             <label for="male">Male</label><br>
+             <input type="radio" id="female" name="gender" value="Female">
+             <label for="female">Female</label><br>
+          </form> 
+          <p></p>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+</body>
+</html>
